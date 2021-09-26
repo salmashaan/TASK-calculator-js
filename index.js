@@ -49,13 +49,12 @@ function printOnConsole(text) {
 
 // DON'T TOUCH THIS CODE
 function updateHistory(historyArray) {
-  const historyList = document.getElementById("histoy-list");
-  historyList.innerHTML = historyArray.map((historyInstance) =>
-    listComponent(historyInstance)
-  );
-
   const listComponent = (text) =>
     `
-            <li >${text}</li>
-        `;
+          <li >${text}</li>
+      `;
+  const historyList = document.getElementById("history-list");
+  historyList.innerHTML = historyArray
+    .map((historyInstance) => listComponent(historyInstance))
+    .join("");
 }
