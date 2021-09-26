@@ -41,3 +41,21 @@ function printOnConsole(text) {
   console.log(text);
   document.getElementById("console").innerText = `${text}`;
 }
+
+/***
+ * Super challenging part
+ * History function
+ */
+
+// DON'T TOUCH THIS CODE
+function updateHistory(historyArray) {
+  const historyList = document.getElementById("histoy-list");
+  historyList.innerHTML = historyArray.map((historyInstance) =>
+    listComponent(historyInstance)
+  );
+
+  const listComponent = (text) =>
+    `
+            <li class="history-list-item">${text}</li>
+        `;
+}
