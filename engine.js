@@ -19,8 +19,11 @@ function printOnConsole(text) {
 function updateHistory(historyArray) {
   const listComponent = (text) =>
     `
-            <li >${text}</li>
-        `;
+        <li>
+            ${text}
+        </li>
+        
+    `;
   const historyList = document.getElementById("history-list");
   historyList.innerHTML = historyArray
     .map((historyInstance) => listComponent(historyInstance))
