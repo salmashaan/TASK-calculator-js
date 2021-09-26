@@ -2,6 +2,8 @@
 
 You are going to create a basic calculator with the simple functionalities
 
+<img src="https://i.ibb.co/sCWfY77/Screenshot-2021-09-26-164102.png" alt="Calculator">
+
 ## Instructions
 
 1. Fork and clone this [repo](https://github.com/JoinCODED/TASK-calculator-js)
@@ -56,4 +58,6 @@ You are going to create a basic calculator with the simple functionalities
 
 ## PART 3: History
 
-- You should store all operations you did in an array and render it using the function ``
+History should display all the past done operations, along with the answer
+
+- You should store all operations you did in an array and render it using the function `updateHistory()`
