@@ -10,8 +10,17 @@
 function buttonClick(text) {
   console.log("Clicking", text);
   printOnConsole(text);
-  if(text === "AC"){
-    printOnConsole("");
+  if (
+    text === "AC" ||
+    text === "+" ||
+    text === "-" ||
+    text === "x" ||
+    text === "=" ||
+    text === "%" ||
+    text === "±" ||
+    text === "÷"
+  ) {
+    printOnConsole(" ");
   }
 }
 
