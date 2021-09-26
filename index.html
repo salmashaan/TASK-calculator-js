@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet/less" type="text/css" href="style.less" />
+    <script src="https://cdn.jsdelivr.net/npm/less@4.1.1"></script>
+
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="app" class="">
+        <div class="calculator">
+            <div class="outputScreen" id="console">0</div>
+            <div class="row" id="row1">
+                <button onclick="buttonClick('AC')" class="function">
+                    AC
+                </button>
+                <button onclick="buttonClick('±')" class="function">
+                    ±
+                </button>
+                <button onclick="buttonClick('%')" class="function">
+                    %
+                </button>
+
+                <button onclick="buttonClick('%')" class="operator">
+                    ÷
+                </button>
+
+            </div>
+            <div class="row" id="row1">
+                <button onclick="buttonClick(1)" class="circle-button">
+                    1
+                </button>
+                <button onclick="buttonClick(2)" class="circle-button">
+                    2
+                </button>
+                <button onclick="buttonClick(3)" class="circle-button">
+                    3
+                </button>
+                <button onclick="buttonClick('x')" class="operator">
+                    x
+                </button>
+            </div>
+            <div class="row" id="row1">
+                <button onclick="buttonClick(4)" class="circle-button">
+                    4
+                </button>
+                <button onclick="buttonClick(5)" class="circle-button">
+                    5
+                </button>
+                <button onclick="buttonClick(6)" class="circle-button">
+                    6
+                </button>
+                <button onclick="buttonClick('-')" class="operator">
+                    -
+                </button>
+            </div>
+            <div class="row" id="row1">
+                <button onclick="buttonClick(7)" class="circle-button">
+                    7
+                </button>
+                <button onclick="buttonClick(8)" class="circle-button">
+                    8
+                </button>
+                <button onclick="buttonClick(9)" class="circle-button">
+                    9
+                </button>
+                <button onclick="buttonClick('+')" class="operator">
+                    +
+                </button>
+            </div <div class="row" id="row1">
+            <button onclick="buttonClick(7)" class="circle-button" id="zero">
+                0
+            </button>
+            <button onclick="buttonClick(8)" class="circle-button">
+                .
+            </button>
+            <button onclick="buttonClick('=')" class="operator">
+                =
+            </button>
+
+        </div>
+    </div>
+    </div>
+</body>
+
+<script src="./index.js"></script>
+
+</html>
