@@ -61,3 +61,10 @@ You are going to create a basic calculator with the simple functionalities
 History should display all the past done operations, along with the answer
 
 - You should store all operations you did in an array and render it using the function `updateHistory(historyArray)`
+- History should be in the following format
+
+```
+1 + 4 = 5
+2 * 8 = 16
+8 / 2 = 4
+```
