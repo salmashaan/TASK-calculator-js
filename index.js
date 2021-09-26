@@ -56,6 +56,6 @@ function updateHistory(historyArray) {
 
   const listComponent = (text) =>
     `
-            <li class="history-list-item">${text}</li>
+            <li >${text}</li>
         `;
 }
