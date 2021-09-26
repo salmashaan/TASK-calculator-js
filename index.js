@@ -10,6 +10,9 @@
 function buttonClick(text) {
   console.log("Clicking", text);
   printOnConsole(text);
+  if(text === "AC"){
+    printOnConsole("");
+  }
 }
 
 /** Supporting functions
