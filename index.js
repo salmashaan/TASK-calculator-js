@@ -1,60 +1,22 @@
-let consoleText = "0";
-let operation = null;
-
+/**
+ *
+ * This function will be called when clicking on any button.
+ * It's going to give you text as a parameter
+ * This is your starting point
+ * If you click on button 0, the text will be "0"
+ * If you click on button +, the text will be "+"
+ * ,... and so on
+ */
 function buttonClick(text) {
   console.log("Clicking", text);
-  if (text >= 0 && text <= 9) {
-    // number
-    if (operation !== null) {
-      // There was a previous operation
-      let consoleNumber = parseInt(consoleText);
-    } else {
-      // No previous operation
-      if (parseInt(consoleText) === 0) {
-        console.log("Text is 0");
-        consoleText = `${text}`;
-        printOnConsole(consoleText);
-      } else {
-        console.log(consoleText);
-        consoleText += text;
-        printOnConsole(consoleText);
-      }
-    }
-  } else {
-    // operation
-    switch (text) {
-      case "+":
-        break;
-      case "-":
-        break;
-      case "*":
-        break;
-      case "/":
-        break;
-      case "=":
-        break;
-    }
-  }
+  // Write your code here
 }
 
-function printOnConsole(text) {
-  console.log(text);
-  document.getElementById("console").innerText = `${text}`;
-}
-
-/***
- * Super challenging part
- * History function
+/** Supporting functions
+ * 1. `printOnConsole(text)`, takes any text, and renders the console part of the web page
+ * 2. `updateHistory(array)`, takes an array of strings and renders it on the web page
  */
 
-// DON'T TOUCH THIS CODE
-function updateHistory(historyArray) {
-  const listComponent = (text) =>
-    `
-          <li >${text}</li>
-      `;
-  const historyList = document.getElementById("history-list");
-  historyList.innerHTML = historyArray
-    .map((historyInstance) => listComponent(historyInstance))
-    .join("");
-}
+// Remove Me after testing
+printOnConsole("123");
+updateHistory(["1 + 5 = 6", "5 x 10 = 50"]);
