@@ -60,4 +60,4 @@ You are going to create a basic calculator with the simple functionalities
 
 History should display all the past done operations, along with the answer
 
-- You should store all operations you did in an array and render it using the function `updateHistory()`
+- You should store all operations you did in an array and render it using the function `updateHistory(historyArray)`
