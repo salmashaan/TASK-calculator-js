@@ -19,4 +19,4 @@ function buttonClick(text) {
 
 // Remove Me after testing
 printOnConsole("123");
-updateHistory(["1 + 5 = 6", "5 x 10 = 50"]);
+updateHistory(["This is a sample historry", "1 + 5 = 6", "5 x 10 = 50"]);
