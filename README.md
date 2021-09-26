@@ -1,28 +1,40 @@
-# TASK-NAME
-
-This is the template for tasks. These repos are the starting points and instructions for students to explore a concept.
+# Calculator.js
+You are going to create a basic calculator with the simple functionalities
 
 ## Instructions
 
-Add instructions here. This is github flavoured markdown so you can be as creative as you want. Add code snippets, images, gifs, checkboxes, anything you want.
+1. Fork and clone this [repo](https://github.com/JoinCODED/TASK-calculator-js)
+2. Open `index.js` file. You should only work and edit this file. 
 
-### 1. Extract Components
+    You will find 2 main functions. 
+    1. `buttonClick(text)`, that will be executed whenever you click on a button. It gives you the text of the button you clicked as a parameter 
 
-- [ ] Look at the html in `index.html`
-- [ ] Move it into `App.js`
-- [ ] Do you see those cards? Can you turn them into a component??
 
-It should look like this:
+    ```js
+    function buttonClick(text) {
+      console.log("Clicking", text);
+      // ... 
+    }
+    ```
 
-![screenshot](https://tenor.com/xNjE.gif)
+      2. `printOnConsole(text)`, that you will call to print the text you pass to the output screen.
+      ```js
+      function buttonClick(text) {
+        console.log("Clicking", text);
+        // ... 
+      }
+      ```
+      
+## PART 1: Displaying numbers
+1. When clicking on any number (from 0-9) , it should display it on the monitor
+2. Clicking on zero while the number is zero shouldn't add zeros to the monitor
+3. Clicking on (AC) operation should clear out the monitor
+4. Clicking on any other button that is not a number should not display on the screen
 
-### 2. Do the thing
 
-Explanation of the thing and why we're about to do it. Cool right?
 
-- [ ] Make a `store.js` file
-- [ ] Copy + Paste broken code:  
-  ```js
-  console.log("lol");
-  ```
-- [ ] Have an explanation ready for when Zainab interrogates you
+## PART 2: 
+
+
+
+
