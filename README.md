@@ -56,4 +56,4 @@ You are going to create a basic calculator with the simple functionalities
 
 ## PART 3: History
 
-- You should store all operations you did in an array and render it using the function
+- You should store all operations you did in an array and render it using the function ``
