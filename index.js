@@ -7,22 +7,40 @@
  * If you click on button +, the text will be "+"
  * ,... and so on
  */
+
+//  console.log("Clicking", text);
+
+let consoleText = "0";
+
 function buttonClick(text) {
-  console.log("Clicking", text);
-  printOnConsole(text);
-  if (
-    text === "AC" ||
-    text === "+" ||
-    text === "-" ||
-    text === "x" ||
-    text === "=" ||
-    text === "%" ||
-    text === "±" ||
-    text === "÷"
-  ) {
-    printOnConsole(" ");
+  if (text === "AC") {
+    clear();
+  } else if (isNumber(text)) {
+    consoleText += text;
+    printOnConsole(+consoleText);
   }
 }
+
+function isNumber(text) {
+  return parseInt(text) >= 0 && parseInt(text) <= 9;
+}
+
+function clear() {
+  printOnConsole("0");
+  consoleText = "0";
+}
+
+// if (
+//   text === "+" ||
+//   text === "-" ||
+//   text === "x" ||
+//   text === "=" ||
+//   text === "%" ||
+//   text === "±" ||
+//   text === "÷"
+// ) {
+//   printOnConsole(" ");
+// }
 
 /** Supporting functions
  * 1. `printOnConsole(text)`, takes any text, and renders the console part of the web page
