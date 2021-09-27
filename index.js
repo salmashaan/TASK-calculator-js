@@ -39,7 +39,7 @@ function clear() {
 //   text === "±" ||
 //   text === "÷"
 // ) {
-//   printOnConsole(" ");
+//printOnConsole(" ");
 // }
 
 /** Supporting functions
@@ -48,5 +48,5 @@ function clear() {
  */
 
 // Remove Me after testing
-printOnConsole("123");
-updateHistory(["This is a sample historry", "1 + 5 = 6", "5 x 10 = 50"]);
+//printOnConsole("123");
+//updateHistory(["This is a sample historry", "1 + 5 = 6", "5 x 10 = 50"]);
